@@ -50,6 +50,7 @@ def test_main_with_dir(mock_upload, mock_tarball, mock_create_bag, mock_unwanted
         'aws:iam:role:internal-digitization-role')
     rmtree(current_dir)
 
+
 def test_remove_unwanted_files(file_fixture):
     initial_file_count = len(list(TMP_PATH.rglob('*')))
 
